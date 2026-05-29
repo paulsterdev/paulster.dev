@@ -1,12 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather');
 
-body{
-  background-image: linear-gradient(90deg, #fbfdd8, #e6fce4);
+:root{
+  --text-dark-color: #000000;
+  --text-dark-disabled-color: #777777;
+  --text-light-color: #F6F6F6;
+  --text-light-disabled-color: #B3B3B3;
+  --bg1-color: #F6F6F6;
+  --bg2-color: #FFFFE4;
+  --bg3-color: #0D1215;
+  --accent1-color: #AD0000;
+  --accent2-color: #00AD9C;
+  --accent3-color: #0059AD;
+
+  --h1-font-size: 36px;
+  --h2-font-size: 24px;
+  --h3-font-size: 22px;
+  --h4-font-sixe: 20px;
+  --body-font-size: 19px;
+  --menu-link-font-size: 25px;
+  
+  --main-padding: 100px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  padding-right: var(--main-padding);
+  padding-left: var(--main-padding);
+  justify-content: space-between;
+  flex: 1;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  padding-right: var(--main-padding);
+  padding-left: var(var(--main-padding));
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 10px;
+}
+
+.logo-container{
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+}
+
+
+.menu-link {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: var(--accent2-color);
 }
 
 h1 {
-  font-family: "Boldonse", sans-serif;
-  font-size: 40px;
+  font-family: "Merriweather", serif;
+  font-size: 36px;
   padding-left: 10%;
   color: #5AAFF5;
 }
