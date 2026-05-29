@@ -1,2 +1,2 @@
 # paulster.dev
-A site for my stuff
+A site for my stuff (WIP)
