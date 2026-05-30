@@ -89,6 +89,32 @@
   flex: 1;
 }
 
+.project-cards-container{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-left: var(--main-horizontal-padding);
+  padding-right: var(--main-horizontal-padding);
+  padding-top: var(--main-vertical-padding);
+  padding-bottom: var(--main-vertical-padding);
+  justify-content: space-between;
+  flex: 1;
+}
+
+.project-details{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 30px;
+}
+
+.separator{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+  flex: 1;
+}
+
 .heading1 {
   font-family: "Merriweather", serif;
   font-weight: 600;
@@ -96,7 +122,6 @@
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   font-stretch: 125%;
 }
 
@@ -104,8 +129,8 @@
   font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   font-weight: 100;
+  font-size: 20px;
   color: var(--text-dark-color);
 }
 
@@ -120,4 +145,11 @@ p,
 ul,
 ol {
   margin: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  width: 100%;
 }
