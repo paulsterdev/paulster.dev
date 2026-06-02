@@ -101,11 +101,18 @@
   flex: 1;
 }
 
+.projectcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
 .project-details{
   display: flex;
   flex-direction: column;
   height: fit-content;
-  gap: 30px;
+  gap: 20px;
 }
 
 .separator{
@@ -125,12 +132,41 @@
   font-stretch: 125%;
 }
 
+.heading2 {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-stretch: 125%;
+}
+
+.heading3 {
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--text-dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-stretch: 125%;
+}
+
 .heading4{
   font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 100;
   font-size: 20px;
+  color: var(--text-dark-color);
+}
+
+.body-style{
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-size: 19px;
   color: var(--text-dark-color);
 }
 
@@ -152,4 +188,14 @@ hr {
   height: 2px;
   background-color: #333;
   width: 100%;
+}
+
+a{
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
