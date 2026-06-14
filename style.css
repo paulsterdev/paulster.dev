@@ -177,9 +177,13 @@
   left: 1px;
 }
 
+.next-icon{
+  transform: translateX(-25px);
+}
+
 .button-styling{
-  background-color: rgba(0,0,0,0);
   border: none;
+  background-color: transparent;
 }
 
 .next-button{

@@ -49,7 +49,7 @@ if (document.getElementById("project-card-container"))
                             ).join("")}
                         </div>
                         <button class="slide-control-button next-button button-styling">
-                        <i class="fa-solid fa-angle-right fa-3x"></i>
+                        <i class="fa-solid fa-angle-right fa-3x next-icon"></i>
                         </button>
                     </div>
                 `
