@@ -101,18 +101,22 @@
   flex: 1;
 }
 
-.projectcard{
+.project-card{
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-content: space-between;
   flex: 1;
+  flex-grow: 1;
 }
 
 .project-details{
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  justify-content: center;
   gap: 20px;
+  flex: 1;
 }
 
 .separator{
@@ -120,6 +124,66 @@
   flex-direction: row;
   border-bottom: 2px solid black;
   flex: 1;
+}
+
+.carousel-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide-container{
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.carousel-slide{
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  object-fit: cover;
+}
+
+.carousel-track{
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-control-button{
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slide-control-button:hover{
+  color: #aaaaaa;
+}
+
+.previous-button{
+  left: 1px;
+}
+
+.button-styling{
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.next-button{
+  right: 1px;
 }
 
 .heading1 {
@@ -199,3 +263,4 @@ a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+
