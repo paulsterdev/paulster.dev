@@ -64,7 +64,7 @@ if (document.getElementById("project-card-container"))
                     imagesHTML = 
                 `
                     <div class="carousel-container">
-                        <button class="button-styling" style="width: 45px; height: 45px">
+                        <button class=" slide-control-button button-styling" style="visibility: hidden;">
                         <i class="fa-solid fa-angle-left fa-3x" style="color: transparent"></i> 
                         </button>
                         <div class="carousel-track">
@@ -76,7 +76,7 @@ if (document.getElementById("project-card-container"))
                                 `
                             ).join("")}
                         </div>
-                        <button class="button-styling" style="width: 45px; height: 45px">
+                        <button class="button-styling" style="visibility: hidden;">
                         <i class="fa-solid fa-angle-right fa-3x next-icon" style="color: transparent"></i>
                         </button>
                     </div>
