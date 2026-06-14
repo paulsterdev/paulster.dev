@@ -33,7 +33,12 @@ if (document.getElementById("project-card-container"))
                     `;
                 }
 
-                const imagesHTML = 
+
+                let imagesHTML = ``;
+
+                if (project.images.length > 1)
+                {
+                    imagesHTML = 
                 `
                     <div class="carousel-container">
                         <button class="slide-control-button previous-button button-styling">
@@ -53,6 +58,32 @@ if (document.getElementById("project-card-container"))
                         </button>
                     </div>
                 `
+                }
+                else
+                {
+                    imagesHTML = 
+                `
+                    <div class="carousel-container">
+                        <button class="button-styling" style="width: 45px; height: 45px">
+                        <i class="fa-solid fa-angle-left fa-3x" style="color: transparent"></i> 
+                        </button>
+                        <div class="carousel-track">
+                            ${project.images.map(image => 
+                                `
+                                <div class="carousel-slide-container">
+                                <img src=${image} alt="A showcase image for my ${project.name}" class="carousel-slide">
+                                </div>
+                                `
+                            ).join("")}
+                        </div>
+                        <button class="button-styling" style="width: 45px; height: 45px">
+                        <i class="fa-solid fa-angle-right fa-3x next-icon" style="color: transparent"></i>
+                        </button>
+                    </div>
+                    `
+                }
+
+                
 
             
                 const projectCard = document.createElement("div");
