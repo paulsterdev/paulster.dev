@@ -88,6 +88,32 @@
   flex: 1;
 }
 
+.home-content-container{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-left: var(--main-horizontal-padding);
+  padding-right: var(--main-horizontal-padding);
+  padding-top: 140px;
+  padding-bottom: 140px;
+  gap: 30px;
+  flex: 1;
+}
+
+.social-links-container{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.social-link{
+  color: var(--text-dark-color);
+}
+
+.social-link:hover{
+  color:#aaaaaa;
+}
+
 .project-cards-container{
   display: flex;
   flex-direction: column;
@@ -340,7 +366,6 @@ hr {
 }
 
 a{
-  color: var(--accent2-color);
   text-decoration: none;
 }
 
