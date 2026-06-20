@@ -25,7 +25,6 @@
 
 .header{
   display: flex;
-  background-color: var(--bg1-color);
   flex-direction: row;
   padding-right: var(--main-horizontal-padding);
   padding-left: var(--main-horizontal-padding);
@@ -273,6 +272,51 @@
   -moz-osx-font-smoothing: grayscale;
   font-stretch: 125%;
   color: var(--accent2-color);
+}
+
+.footer-container
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: var(--main-horizontal-padding);
+  padding-left: var(--main-horizontal-padding);
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.circles-container{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.footer-text{
+  font-family: "Merriweather", serif;
+  color: var(--accent2-color);
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-stretch: 125%;
 }
 
 body,

@@ -1,7 +1,13 @@
 fetch("header.html")
     .then(response => response.text())
-    .then(data => {
-        document.getElementById("header-menu").innerHTML = data;
+    .then(headerHTML => {
+        document.getElementById("header-menu").innerHTML = headerHTML;
+    });
+
+fetch("footer.html")
+    .then(response => response.text())
+    .then(footerHTML => {
+        document.getElementById("footer").innerHTML = footerHTML;
     });
 
 
