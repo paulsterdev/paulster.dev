@@ -183,27 +183,40 @@ if (document.getElementById("research-cards-container"))
     .then(research=> 
     {
         const writingsContainer = document.getElementById("research-cards-container");
-        research.forEach(researchEssay =>
+        
+        if (research.length >0)
         {
-            const writingLink = researchEssay.link;
+            research.forEach(researchEssay =>
+            {
+                const writingDetails = document.createElement("div");
+                writingDetails.classList.add("essay-card");
+                const writingLink = researchEssay.link;
+                const separator = document.createElement("div");
+                separator.classList.add("separator");
+                writingDetails.innerHTML = 
+                `
+                    <a href=${researchEssay.link}>
+                        <h3 class="essay-link">${researchEssay.title}</h3>
+                    </a>
+                    <h4 class="body-style">${researchEssay.date}</h4>
+                `;
+
+                writingsContainer.appendChild(writingDetails);
+                writingsContainer.appendChild(separator);
+            }
+        )
+        }
+        else
+        {
             const writingDetails = document.createElement("div");
             writingDetails.classList.add("essay-card");
-            const separator = document.createElement("div");
-            separator.classList.add("separator");
-
-            writingDetails.innerHTML = 
+            writingDetails.innerHTML =
             `
-                <a href=${researchEssay.link}>
-                    <h3 class="essay-link">${researchEssay.title}</h3>
-                </a>
-                <h4 class=body-style>${researchEssay.date}</h4>
-            `;
-
+                <h3 class="body-style"> Nothing here yet</h3>
+            `
             writingsContainer.appendChild(writingDetails);
-            writingsContainer.appendChild(separator);
         }
 
-
-        )
+        
     })
 }
