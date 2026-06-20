@@ -141,3 +141,69 @@ if (document.getElementById("project-card-container"))
                 });
             });
         }
+
+
+if (document.getElementById("writing-cards-container"))
+{
+    fetch("writings.json")
+    .then(response =>response.json())
+    .then(writings=> 
+    {
+        const writingsContainer = document.getElementById("writing-cards-container");
+        writings.forEach(writing =>
+        {
+            const writingLink = writing.link;
+            const writingDetails = document.createElement("div");
+            writingDetails.classList.add("essay-card");
+            const separator = document.createElement("div");
+            separator.classList.add("separator");
+
+            writingDetails.innerHTML = 
+            `
+                <a href=${writing.link}>
+                    <h3 class="essay-link">${writing.title}</h3>
+                </a>
+                <h4 class=body-style>${writing.date}</h4>
+            `;
+
+            writingsContainer.appendChild(writingDetails);
+            writingsContainer.appendChild(separator);
+        }
+
+
+        )
+    })
+}
+
+
+if (document.getElementById("research-cards-container"))
+{
+    fetch("research.json")
+    .then(response =>response.json())
+    .then(research=> 
+    {
+        const writingsContainer = document.getElementById("research-cards-container");
+        research.forEach(researchEssay =>
+        {
+            const writingLink = researchEssay.link;
+            const writingDetails = document.createElement("div");
+            writingDetails.classList.add("essay-card");
+            const separator = document.createElement("div");
+            separator.classList.add("separator");
+
+            writingDetails.innerHTML = 
+            `
+                <a href=${researchEssay.link}>
+                    <h3 class="essay-link">${researchEssay.title}</h3>
+                </a>
+                <h4 class=body-style>${researchEssay.date}</h4>
+            `;
+
+            writingsContainer.appendChild(writingDetails);
+            writingsContainer.appendChild(separator);
+        }
+
+
+        )
+    })
+}

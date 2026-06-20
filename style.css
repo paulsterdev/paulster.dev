@@ -190,6 +190,33 @@
   right: 1px;
 }
 
+.essay-cards-container{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.essay-card{
+  display:flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 20px;
+  flex: 1;
+}
+
+.text-normal{
+  color: var(--text-dark-color);
+}
+
+.text-links{
+  color: var(--accent2-color);
+}
+
 .heading1 {
   font-family: "Merriweather", serif;
   font-weight: 600;
@@ -236,6 +263,16 @@
   font-weight: normal;
   font-size: 19px;
   color: var(--text-dark-color);
+}
+
+.essay-link{
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-stretch: 125%;
+  color: var(--accent2-color);
 }
 
 body,
