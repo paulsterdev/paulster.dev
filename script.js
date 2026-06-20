@@ -150,28 +150,43 @@ if (document.getElementById("writing-cards-container"))
     .then(writings=> 
     {
         const writingsContainer = document.getElementById("writing-cards-container");
-        writings.forEach(writing =>
+        
+        if (writings.length >0)
         {
-            const writingLink = writing.link;
-            const writingDetails = document.createElement("div");
-            writingDetails.classList.add("essay-card");
-            const separator = document.createElement("div");
-            separator.classList.add("separator");
+            writings.forEach(writing =>
+            {
+                const writingLink = writing.link;
+                const writingDetails = document.createElement("div");
+                writingDetails.classList.add("essay-card");
+                const separator = document.createElement("div");
+                separator.classList.add("separator");
 
-            writingDetails.innerHTML = 
-            `
-                <a href=${writing.link}>
-                    <h3 class="essay-link">${writing.title}</h3>
-                </a>
-                <h4 class=body-style>${writing.date}</h4>
-            `;
+                writingDetails.innerHTML = 
+                `
+                    <a href=${writing.link}>
+                        <h3 class="essay-link">${writing.title}</h3>
+                    </a>
+                    <h4 class=body-style>${writing.date}</h4>
+                `;
 
-            writingsContainer.appendChild(writingDetails);
-            writingsContainer.appendChild(separator);
-        }
-
+                writingsContainer.appendChild(writingDetails);
+                writingsContainer.appendChild(separator);
+            }
 
         )
+        }
+        else
+        {
+            const writingDetails = document.createElement("div");
+            writingDetails.classList.add("essay-card");
+            writingDetails.innerHTML =
+            `
+                <h3 class="body-style"> (Nothing here yet)</h3>
+            `
+            writingsContainer.appendChild(writingDetails);
+        }
+
+        
     })
 }
 
@@ -212,7 +227,7 @@ if (document.getElementById("research-cards-container"))
             writingDetails.classList.add("essay-card");
             writingDetails.innerHTML =
             `
-                <h3 class="body-style"> Nothing here yet</h3>
+                <h3 class="body-style"> (Nothing here yet)</h3>
             `
             writingsContainer.appendChild(writingDetails);
         }
