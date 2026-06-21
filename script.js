@@ -1,10 +1,10 @@
-fetch("header.html")
+fetch("/header.html")
     .then(response => response.text())
     .then(headerHTML => {
         document.getElementById("header-menu").innerHTML = headerHTML;
     });
 
-fetch("footer.html")
+fetch("/footer.html")
     .then(response => response.text())
     .then(footerHTML => {
         document.getElementById("footer").innerHTML = footerHTML;
@@ -13,7 +13,7 @@ fetch("footer.html")
 
 if (document.getElementById("project-card-container"))
     {
-    fetch("projects.json")
+    fetch("/datasets/projects.json")
         .then(response => response.json())
         .then(projects => {
             const projectContainer = document.getElementById("project-card-container");
@@ -151,7 +151,7 @@ if (document.getElementById("project-card-container"))
 
 if (document.getElementById("writing-cards-container"))
 {
-    fetch("writings.json")
+    fetch("/datasets/writings.json")
     .then(response =>response.json())
     .then(writings=> 
     {
@@ -199,7 +199,7 @@ if (document.getElementById("writing-cards-container"))
 
 if (document.getElementById("research-cards-container"))
 {
-    fetch("research.json")
+    fetch("/datasets/research.json")
     .then(response =>response.json())
     .then(research=> 
     {
