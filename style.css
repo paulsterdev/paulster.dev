@@ -284,15 +284,21 @@
     "wdth" 100;
 }
 
+.essay-container{
+  padding-right: 400px;
+  padding-left: 400px;
+}
+
 .body-style{
   font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
+  line-height: 150%;
   font-size: 19px;
   color: var(--text-dark-color);
   font-variation-settings:
-    "wdth" 100;
+    "wdth" 96;
 }
 
 .essay-link{
@@ -353,6 +359,14 @@
   font-style: italic;
 }
 
+.page-title-alt{
+  text-align: center;
+  padding-left: var(--main-horizontal-padding);
+  padding-right: var(--main-horizontal-padding);
+  padding-top: var(--main-vertical-padding);
+  padding-bottom: var(--main-vertical-padding);
+}
+
 body,
 h1,
 h2,
@@ -360,7 +374,6 @@ h3,
 h4,
 h5,
 h6,
-p,
 ul,
 ol {
   margin: 0;
