@@ -83,7 +83,6 @@
   padding-top: var(--main-vertical-padding);
   padding-bottom: var(--main-vertical-padding);
   gap: 30px;
-  flex: 1;
 }
 
 .home-content-container{
@@ -230,6 +229,8 @@
   padding-bottom: 40px;
   gap: 20px;
   flex: 1;
+  padding-right: var(--main-horizontal-padding);
+  padding-left: var(--main-horizontal-padding);
 }
 
 .text-normal{
