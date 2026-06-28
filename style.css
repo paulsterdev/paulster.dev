@@ -286,8 +286,9 @@
 }
 
 .essay-container{
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 450px;
+  padding-left: 450px;
+  padding-bottom: 20px;
 }
 
 .body-style{
@@ -296,7 +297,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 150%;
-  font-size: 19px;
+  font-size: 20px;
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 96;
@@ -360,8 +361,8 @@
   text-align: center;
   padding-left: var(--main-horizontal-padding);
   padding-right: var(--main-horizontal-padding);
-  padding-top: var(--main-vertical-padding);
-  padding-bottom: var(--main-vertical-padding);
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 body,
