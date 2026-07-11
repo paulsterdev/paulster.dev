@@ -28,14 +28,14 @@ if (document.getElementById("project-card-container"))
                     })
                     linkDisplayHTML =
                     `
-                    <p class=heading4> Links: ${linkListHTML.join(", ")}</p>
+                    <p class="heading4 p-style-alt"> Links: ${linkListHTML.join(", ")}</p>
                     `;
                 }
                 else
                 {
                     linkDisplayHTML = 
                     `
-                    <p class=heading4><a href=${project.links[0].url}> ${project.links[0].title}</a></p>
+                    <p class="heading4 p-style-alt"><a href=${project.links[0].url}> ${project.links[0].title}</a></p>
                     `;
                 }
 
@@ -62,7 +62,7 @@ if (document.getElementById("project-card-container"))
                         <button class="slide-control-button next-button button-styling">
                         <i class="fa-solid fa-angle-right fa-3x next-icon"></i>
                         </button>
-                    </div>
+                        </div>
                 `
                 }
                 else
@@ -99,13 +99,14 @@ if (document.getElementById("project-card-container"))
                 projectDetails.classList.add("project-details");
 
                 projectDetails.innerHTML = 
-                `<h3 class="heading2">${project.name}</h3>
+                `<h3 class="project-title">${project.name}</h3>
                 <h4 class=heading3>${project.description}</h4>
                 ${linkDisplayHTML}
-                <p class=body-style> STACK: ${project.stack.join(", ")}</p>
-                <p class=body-style> Tags: ${project.tags.join(", ")}</p>
+                <p class="body-style-alt p-style-alt"> STACK: ${project.stack.join(", ")}</p>
+                <p class=body-style-alt p-style-alt"> Tags: ${project.tags.join(", ")}</p>
                 `;
                 const projectImages = document.createElement("div");
+                projectImages.classList.add("carousel-container")
                 projectImages.innerHTML =
                 `
                 ${imagesHTML}
@@ -119,9 +120,9 @@ if (document.getElementById("project-card-container"))
 
                 if (projects.legnth > 1)
                 {
-                const separator = document.createElement("div");
-                separator.classList.add("separator");
-                projectContainer.appendChild(separator);
+                    const separator = document.createElement("div");
+                    separator.classList.add("separator");
+                    projectContainer.appendChild(separator);
                 }
                 
 

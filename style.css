@@ -151,12 +151,15 @@
 .carousel-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-top: var(--main-vertical-padding);
+  padding-bottom: var(--main-vertical-padding);
   max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
+  flex: 1;
 }
 
 .carousel-slide-container{
@@ -255,18 +258,18 @@
 .heading2 {
   font-family: "Merriweather", serif;
   font-weight: 450;
-  font-size: 24px;
+  font-size: 26px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-variation-settings:
-    "wdth" 100;
+    "wdth" 98;
 }
 
 .heading3 {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -279,10 +282,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 100;
+}
+
+.project-title {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--text-dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variation-settings:
+    "wdth" 98;
 }
 
 .essay-container{
@@ -301,6 +315,21 @@
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 96;
+}
+
+.body-style-alt{
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-dark-color);
+  font-variation-settings:
+    "wdth" 96;
+}
+
+.p-style-alt{
+  margin: 0;
 }
 
 .essay-link{
@@ -392,6 +421,7 @@ hr {
 
 a{
   text-decoration: none;
+  color: var(--accent2-color);
 }
 
 a:hover {
