@@ -1,3 +1,30 @@
 [
-   
+   [
+    {
+        "name": "Season Themes",
+        "description": "A collection of browser themes for each season of the year available for Chrome and Firefox. Also a way of exploring color and UI vibes.",
+        "links": 
+        [
+        {
+            "title": "Firefox",
+            "url": "https://addons.mozilla.org/en-US/firefox/collections/18473646/Season-Themes/"
+        },
+        {
+            "title": "Chrome",
+            "url": "https://chromewebstore.google.com/search/paulster?hl=en&authuser=0"
+        }
+        ],
+        "stack": ["VS Code", "Canva","ChatGPT (Research)"],
+        "images": 
+        ["/assets/projects/themes/Spring_Firefox.png",
+            "/assets/projects/themes/Spring_Chrome.png",
+            "/assets/projects/themes/Summer_Firefox.png",
+            "/assets/projects/themes/Summer_Chrome.png",
+            "/assets/projects/themes/Autumn_Firefox.png",
+            "/assets/projects/themes/Autumn_Chrome.png",
+            "/assets/projects/themes/Winter_Firefox.png",
+            "/assets/projects/themes/Winter_Chrome.png"],
+        "tags": ["code","design"]
+    }
+]
 ]
