@@ -20,7 +20,7 @@ if (document.getElementById("project-card-container"))
             projects.forEach(project =>{
                 const linkListHTML = [];
                 let linkDisplayHTML = "";
-
+                console.log(project.links)
                 if (project.links.length > 1)
                 {
                     project.links.forEach(link =>{
@@ -112,12 +112,18 @@ if (document.getElementById("project-card-container"))
                 `;
                 
 
-                const separator = document.createElement("div");
-                separator.classList.add("separator");
+                
                 projectContainer.appendChild(projectCard);
                 projectCard.appendChild(projectDetails);
                 projectCard.appendChild(projectImages);
+
+                if (projects.legnth > 1)
+                {
+                const separator = document.createElement("div");
+                separator.classList.add("separator");
                 projectContainer.appendChild(separator);
+                }
+                
 
                 const carouselContainer = projectImages.querySelector('.carousel-container');
                 const track = carouselContainer.querySelector('.carousel-track');

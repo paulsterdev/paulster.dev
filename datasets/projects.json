@@ -1,6 +1,5 @@
 [
-   [
-    {
+   {
         "name": "Season Themes",
         "description": "A collection of browser themes for each season of the year available for Chrome and Firefox. Also a way of exploring color and UI vibes.",
         "links": 
@@ -26,5 +25,4 @@
             "/assets/projects/themes/Winter_Chrome.png"],
         "tags": ["code","design"]
     }
-]
 ]
