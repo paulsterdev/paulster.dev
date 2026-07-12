@@ -183,7 +183,11 @@ if (document.getElementById("writing-cards-container"))
                 `;
 
                 writingsContainer.appendChild(writingDetails);
-                writingsContainer.appendChild(separator);
+                if (writings.length > 1)
+                {
+                    writingsContainer.appendChild(separator);
+                }
+                
             }
 
         )
@@ -230,7 +234,11 @@ if (document.getElementById("research-cards-container"))
                 `;
 
                 writingsContainer.appendChild(writingDetails);
-                writingsContainer.appendChild(separator);
+                if (research.legnth > 1)
+                {
+                    writingsContainer.appendChild(separator);
+                }
+                
             }
         )
         }

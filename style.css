@@ -231,7 +231,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 20px;
-  flex: 1;
   padding-right: var(--main-horizontal-padding);
   padding-left: var(--main-horizontal-padding);
 }
@@ -334,11 +333,13 @@
 
 .essay-link{
   font-family: "Merriweather", serif;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--accent2-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--accent2-color);
+  font-variation-settings:
+    "wdth" 98;
 }
 
 .essay-visual{
