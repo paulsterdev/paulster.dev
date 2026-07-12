@@ -341,6 +341,27 @@
   color: var(--accent2-color);
 }
 
+.essay-visual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-description{
+  text-align: center;
+  color: var(--text-dark-disabled-color);
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 80%;
+  font-size: 20px;
+  font-variation-settings:
+    "wdth" 96;
+  margin: 0;
+}
+
 .footer-container
 {
   display: flex;
@@ -393,6 +414,12 @@
   padding-top: 40px;
   padding-bottom: 15px;
 }
+
+.essay-title{
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
 
 body,
 h1,
