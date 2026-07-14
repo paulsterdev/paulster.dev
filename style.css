@@ -9,39 +9,16 @@
   --accent1-color: #AD0000;
   --accent2-color: #00AD9C;
   --accent3-color: #0059AD;
+
+  --h1-font-size: 36px;
+  --h2-font-size: 24px;
+  --h3-font-size: 22px;
+  --h4-font-sixe: 20px;
+  --body-font-size: 19px;
+  --menu-link-font-size: 25px;
   
-  --main-horizontal-padding: 6.25rem;
-  --main-vertical-padding: 3.125rem;
-}
-
-@media (max-width: 550px){
-  html{
-    font-size: 12px;
-  }
-  .footer{
-    display: flex;
-    flex-direction: column !important;
-    align-items:center;
-    gap: 0.9375rem;
-    padding-top: 1.875rem;
-    padding-bottom: 1.875rem;
-    padding-right: 3.75rem;
-    padding-left: 3.75rem;
-    justify-content: space-between;
-    flex: 1;
-  }
-}
-
-@media (max-width:900px){
-  .project-card{
-    display: flex;
-    flex-direction: column !important;
-    padding-top: 0.9375rem;
-    padding-bottom: 0.9375rem;
-    justify-content: space-between;
-    flex: 1;
-    flex-grow: 1;
-}
+  --main-horizontal-padding: 100px;
+  --main-vertical-padding: 50px;
 }
 
 .header{
@@ -49,8 +26,8 @@
   flex-direction: row;
   padding-right: var(--main-horizontal-padding);
   padding-left: var(--main-horizontal-padding);
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
   flex: 1;
 }
@@ -58,40 +35,38 @@
 .menu{
   display: flex;
   flex-direction: row;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
   justify-content: space-between;
   width: fit-content;
-  gap: 0.9375rem;
+  gap: 15px;
 }
 
 .logo-container{
   display: flex;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
   width: fit-content;
   height: fit-content;
   align-items: center;
 }
 
 .logo{
-  width: 6.25rem;
+  width: 100px;
 }
 
 
 .menu-link {
   font-family: "Merriweather", serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   width: fit-content;
   height: fit-content;
   align-items: center;
   justify-content: center;
-  padding-top: 0.3125rem;
-  padding-bottom: 0rem;
+  padding-top: 5px;
+  padding-bottom: 0px;
   color: var(--accent2-color);
   text-decoration: none;
-  font-variation-settings:
-    "wdth" 98;
 }
 
 .menu-link:hover {
@@ -107,7 +82,7 @@
   padding-right: var(--main-horizontal-padding);
   padding-top: var(--main-vertical-padding);
   padding-bottom: var(--main-vertical-padding);
-  gap: 1.875rem;
+  gap: 30px;
 }
 
 .home-content-container{
@@ -116,9 +91,9 @@
   height: fit-content;
   padding-left: var(--main-horizontal-padding);
   padding-right: var(--main-horizontal-padding);
-  padding-top: 8.75rem;
-  padding-bottom: 8.75rem;
-  gap: 1.875rem;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  gap: 30px;
   flex: 1;
 }
 
@@ -151,8 +126,8 @@
 .project-card{
   display: flex;
   flex-direction: row;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-content: space-between;
   flex: 1;
   flex-grow: 1;
@@ -162,7 +137,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 20px;
   flex: 1;
 }
 
@@ -178,7 +153,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  gap: 20px;
   padding-top: var(--main-vertical-padding);
   padding-bottom: var(--main-vertical-padding);
   max-width: 600px;
@@ -212,9 +187,9 @@
 }
 
 .slide-control-button{
-  width: 2.8125rem;
-  height: 2.8125rem;
-  font-size: 0.9375rem;
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -253,9 +228,9 @@
   flex-direction: column;
   height: fit-content;
   justify-content: space-between;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  gap: 1.25rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 20px;
   padding-right: var(--main-horizontal-padding);
   padding-left: var(--main-horizontal-padding);
 }
@@ -271,7 +246,7 @@
 .heading1 {
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 2.875rem;
+  font-size: 46px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -282,7 +257,7 @@
 .heading2 {
   font-family: "Merriweather", serif;
   font-weight: 450;
-  font-size: 1.625rem;
+  font-size: 26px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -293,7 +268,7 @@
 .heading3 {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -306,7 +281,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
-  font-size: 1.188rem;
+  font-size: 19px;
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 100;
@@ -315,7 +290,7 @@
 .project-title {
   font-family: "Merriweather", serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 32px;
   color: var(--text-dark-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -324,9 +299,9 @@
 }
 
 .essay-container{
-  padding-right: 28.125rem;
-  padding-left: 28.125rem;
-  padding-bottom: 1.25rem;
+  padding-right: 450px;
+  padding-left: 450px;
+  padding-bottom: 20px;
 }
 
 .body-style{
@@ -335,7 +310,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 150%;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 96;
@@ -346,7 +321,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: var(--text-dark-color);
   font-variation-settings:
     "wdth" 96;
@@ -359,7 +334,7 @@
 .essay-link{
   font-family: "Merriweather", serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 32px;
   color: var(--accent2-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -382,7 +357,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 80%;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-variation-settings:
     "wdth" 96;
   margin: 0;
@@ -398,36 +373,35 @@
 .footer{
   display: flex;
   flex-direction: row;
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  padding-right: 3.75rem;
-  padding-left: 3.75rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
   justify-content: space-between;
   flex: 1;
 }
 
 .circles-container{
   display: flex;
-  gap: 0.625rem;
+  gap: 10px;
   flex-direction: row;
   width: fit-content;
   align-items: center;
 }
 
 .circle{
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
 .footer-text{
   font-family: "Merriweather", serif;
   color: var(--accent2-color);
-  font-size: 1.25rem;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-variation-settings:
-    "wdth" 98;
+  font-stretch: 125%;
 }
 
 .name-styling{
@@ -438,13 +412,13 @@
   text-align: center;
   padding-left: var(--main-horizontal-padding);
   padding-right: var(--main-horizontal-padding);
-  padding-top: 2.5rem;
-  padding-bottom: 0.9375rem;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 .essay-title{
-  padding-top: 2.5rem;
-  padding-bottom: 0.9375rem;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 
@@ -468,7 +442,7 @@ body{
 
 hr {
   border: none;
-  height: 0.125rem;
+  height: 2px;
   background-color: #333;
   width: 100%;
 }
