@@ -14,7 +14,7 @@
   --main-vertical-padding: 3.125rem;
 }
 
-@media (max-width: 550px){
+/* @media (max-width: 550px){
   html{
     font-size: 12px;
   }
@@ -43,6 +43,7 @@
     flex-grow: 1;
 }
 }
+*/
 
 .header{
   display: flex;
