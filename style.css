@@ -40,6 +40,11 @@
   align-items:center;
   flex: 1;
 }
+.essay-container{
+  padding-right: var(--main-horizontal-padding) !important;
+  padding-left: var(--main-horizontal-padding) !important;
+  padding-bottom: 1.25rem;
+}
 }
 
 @media (max-width:900px){
@@ -378,7 +383,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
+}
+
+.essay-image{
+  max-width: 100%;
 }
 
 .img-description{
@@ -388,7 +397,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  line-height: 80%;
+  line-height: 90%;
   font-size: 1.25rem;
   font-variation-settings:
     "wdth" 96;
