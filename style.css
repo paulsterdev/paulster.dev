@@ -161,7 +161,6 @@
 .project-details{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.25rem;
   flex: 1;
 }
@@ -176,15 +175,13 @@
 .carousel-container{
   display: flex;
   flex-direction: row;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  padding-top: var(--main-vertical-padding);
-  padding-bottom: var(--main-vertical-padding);
   max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
-  flex: 1;
 }
 
 .carousel-slide-container{

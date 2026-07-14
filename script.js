@@ -46,7 +46,6 @@ if (document.getElementById("project-card-container"))
                 {
                     imagesHTML = 
                 `
-                    <div class="carousel-container">
                         <button class="slide-control-button previous-button button-styling">
                         <i class="fa-solid fa-angle-left fa-3x"></i> 
                         </button>
@@ -62,14 +61,12 @@ if (document.getElementById("project-card-container"))
                         <button class="slide-control-button next-button button-styling">
                         <i class="fa-solid fa-angle-right fa-3x next-icon"></i>
                         </button>
-                        </div>
                 `
                 }
                 else
                 {
                     imagesHTML = 
                 `
-                    <div class="carousel-container">
                         <button class=" slide-control-button button-styling" style="visibility: hidden;">
                         <i class="fa-solid fa-angle-left fa-3x" style="color: transparent"></i> 
                         </button>
@@ -85,7 +82,6 @@ if (document.getElementById("project-card-container"))
                         <button class="button-styling" style="visibility: hidden;">
                         <i class="fa-solid fa-angle-right fa-3x next-icon" style="color: transparent"></i>
                         </button>
-                    </div>
                     `
                 }
 
