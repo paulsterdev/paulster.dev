@@ -30,6 +30,16 @@
     justify-content: space-between;
     flex: 1;
   }
+  .header{
+  display: flex;
+  flex-direction: column !important;
+  padding-right: var(--main-horizontal-padding);
+  padding-left: var(--main-horizontal-padding);
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  align-items:center;
+  flex: 1;
+}
 }
 
 @media (max-width:900px){
