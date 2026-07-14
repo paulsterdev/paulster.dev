@@ -122,7 +122,7 @@ if (document.getElementById("project-card-container"))
                 }
                 
 
-                const carouselContainer = projectImages.querySelector('.carousel-container');
+                const carouselContainer = projectCard.querySelector('.carousel-container');
                 const track = carouselContainer.querySelector('.carousel-track');
                 const previousButton = carouselContainer.querySelector('.previous-button');
                 const nextButton = carouselContainer.querySelector('.next-button');
