@@ -24,5 +24,24 @@
             "/assets/projects/themes/Winter_Firefox.png",
             "/assets/projects/themes/Winter_Chrome.png"],
         "tags": ["code","design"]
+    },
+    {
+        "name": "BMSaver",
+        "description": "A browser extension for Chrome and Firefox giving the ability to quickly save webpages without visiting them.",
+        "links": 
+        [
+        {
+            "title": "Chrome",
+            "url": "https://chromewebstore.google.com/detail/bmsaver/homcgafloeamgnedhedmdebnjhefmbac"
+        },
+        {
+            "title": "Firefox",
+            "url": "https://addons.mozilla.org/en-US/firefox/addon/bmsaver/"
+        }
+        ],
+        "stack": ["VS Code", "Figma","Canva"],
+        "images": 
+        ["/assets/projects/bmsaver/BMSaver-main"],
+        "tags": ["code","design"]
     }
 ]
