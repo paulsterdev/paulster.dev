@@ -499,3 +499,16 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
+table, tr, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0.5rem;
+}
+
+tr, th{
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css?v=1.1">
+        <link rel="shortcut icon" href="/assets/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,112,300..900;1,18..144,112,300..900&display=swap" rel="stylesheet">
+        <script src="/script.js" defer></script>
+
+        <title>Testing AI Model Puzzle Solving Abilities - paulster.dev</title>
+    </head>
+    
+    <body>
+        <header>
+            <div id="header-menu">
+            </div>
+        </header>
+        <div class="essay-container">
+            <h1 class="heading1 essay-title">
+                Testing AI Model Puzzle Solving Abilities
+            </h1>
+            <p class="body-style">
+                A while ago I came across this image in a (likely automated) X/Twitter post 
+                (a carbon copy of the post I initially encountered is <a href=https://x.com/suraj_dalvi21/status/1983082255594697187> here</a>). 
+            </p>
+            <div class="essay-visual">
+                <img src="/research/assets/ai-puzzle/original-number-puzzle.jpeg" class="essay-image" alt="A visual logic puzzle asking which number is missing from a grid of numbers 1-100. Answer: 68."> 
+            </div>
+            <p class="body-style">
+                In fact, performing a search on the platform for "Which number is missing" will yield a number of very similar results, all with high engagement numbers. 
+                (As of September of 2026, the current meta appears to be 50 numbers.) 
+            </p>
+            <p class="body-style">
+                I decided a neat experiment would be to turn the tables and use this puzzle, apparently designed with AI assistance for human audiences,
+                 as a way to test the ability of modern AI models. Read on for the methodology and findings.
+            </p>
+            <h2 class="heading2">
+                <strong>Methodology</strong>
+            </h2>
+            <p class="body-style">
+                This section shows a bit about how the experiment was defined and the process behind collecting data.
+            </p>
+            <h3 class="heading3">
+                <strong>Description</strong>
+            </h3>
+            <p class="body-style">
+                The experiment involved presenting the puzzle to a human subject and a number of large language model (LLM) products, observing whether each subject solved the puzzle, and recording several relevant metrics for further comparison. 
+                For the human subject, the following metrics were recorded:
+                <ul class="body-style">
+                    <li>Whether the puzzle was solved correctly</li>
+                    <li>Time-to-solution</li>
+                </ul>
+                </p>
+            <p class="body-style">
+                For each LLM subject, the following metrics were recorded:
+                <ul class="body-style">
+                    <li>Whether the puzzle was solved correctly</li>
+                    <li>Time-to-solution</li>
+                    <li>Tokens generated</li>
+                    <li>Speed (tokens per second)</li>
+                    <li>Generation cost</li>
+                </ul>
+            </p>
+             <h3 class="heading3">
+                <strong>Subject Selection</strong>
+            </h3>
+            <p class="body-style">
+                The human subject selected was an adult man (not me) with a demonstrated ability to solve puzzles who was unfamiliar with this particular puzzle prior to being presented it.
+                The following AI models and reasoning settings for each were selected:
+            </p>
+            <div class="essay-visual">
+            <table class="heading4">
+                <tr>
+                    <th>Model</th>
+                    <th>Reasoning Setting Used</th>
+                </tr>
+                <tr>
+                    <th>DeepSeek V4 Flash Vision Exp*</th>
+                    <th>low</th>
+                </tr>
+                <tr>
+                    <th>DeepSeek V4 Flash Vision Exp*</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>DeepSeek V4 Flash Vision Exp*</th>
+                    <th>high</th>
+                </tr>
+                <tr>
+                    <th>Moonshot AI Kimi K3*</th>
+                    <th>low</th>
+                </tr>
+                <tr>
+                    <th>Moonshot AI Kimi K3*</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Moonshot AI Kimi K3*</th>
+                    <th>high</th>
+                </tr>
+                <tr>
+                    <th>GLM 5.3 Flash*</th>
+                    <th>low</th>
+                </tr>
+                <tr>
+                    <th>GLM 5.3 Flash*</th>
+                    <th>medium</th>
+                </tr> 
+                <tr>
+                    <th>GLM 5.3 Flash*</th>
+                    <th>high</th>
+                </tr>
+                <tr>
+                    <th>Qwen 3.8 Flash</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Qwen 3.7 Plus</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Qwen 3.8 Max</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>GPT 5.6 Luna</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>GPT 5.6 Terra</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>GPT 5.6 Sol</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Claude Sonnet 5</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Claude Opus 5</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Claude Fable 5</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Grok 4.6*</th>
+                    <th>low</th>
+                </tr>
+                <tr>
+                    <th>Grok 4.6*</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Grok 4.6*</th>
+                    <th>high</th>
+                </tr>
+                <tr>
+                    <th>Gemini 3.7 Flash</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Gemini 3.1 Pro Preview</th>
+                    <th>medium</th>
+                </tr>
+                <tr>
+                    <th>Gemini 3.5 Flash Lite</th>
+                    <th>medium</th>
+                </tr>
+            </table>
+            </div>
+            <p class="img-description">
+                <i>*Same model used with different reasoning tiers</i>
+            </p>
+            <p class="body-style">
+                The idea behind this selection was to survey a comparable number of products from both U.S.- and foreign-based high-profile labs. 
+                For some of the labs, a tiered model system (lower-capability, medium-capability, high-capability) for latest offerings wasn't available, 
+                so reasoning tiers for a single model were used instead. This is denoted with an asterisk in the chart above. For all other labs, 3 different
+                 models were selected to represent these capability tiers, all set to use medium reasoning effort.
+            </p>
+            <h3 class="heading3">
+                <strong>Presentation</strong>
+            </h3>
+            <p class="body-style">
+                In order to prevent a potential advantage for models that had a solution to any specific form of the puzzle in their training data, 
+                a replica was created with a unique solution for the missing number: 51.
+            </p>
+            <div class="essay-visual">
+                <img src="/research/assets/ai-puzzle/custom-puzzle.png" class="essay-image" alt="A visual logic puzzle prompting the viewer to find the missing number from a grid of numbers 1-100. Answer: 51."> 
+            </div>
+            <p class="body-style">
+                For the human subject, the presentation setting was a desk on which an open laptop computer, an open notebook, and a pencil sat, the 
+                latter two objects included to accommodate for any reasoning methods that might have felt most natural. Once the subject was sat at the desk, 
+                the puzzle image was revealed on the computer screen. Prior to seeing the image, the subject was briefed that the experiment involved being 
+                given a puzzle and being measured on time but no description of the puzzle contents.
+            </p>
+            <p class="body-style">
+                For each AI subject, the puzzle was presented in a chat session served on OpenRouter's Chat product. Each initial chat message consisted
+                 of a text prompt: "Try solving this puzzle." and the puzzle as an image attachment. Provider routing was left on auto (OpenRouter chose the 
+                 best provider available). All models had reasoning enabled (set to different effort levels based on the selection process above). 
+                 All other settings were left at OpenRouter defaults.
+            </p>
+            <h3 class="heading3">
+                <strong>Metric Recording</strong>
+            </h3>
+            <p class="body-style">
+                The two relevant metrics for the human subject were correctness of the puzzle solution and the time-to-solution. 
+                The moment the puzzle was revealed on the computer screen, a stopwatch was started. 
+                The stopwatch was stopped when the subject announced his solution to the puzzle.
+            </p>
+            <p class="body-style">
+                For the LLM subjects, in addition to correctness and time, the count of total tokens generated in the response, token generation speed 
+                (measured in tokens per second), and cost (measured in dollars)
+                 were recorded. The source for all of these metrics was OpenRouter's analytics logging. When models used prompt cache retrieval or storage, 
+                 any additional costs or any cost deductions connected with these geatures were not factored into cost measurements. 
+                 Time-to-solution measurements only factored in the latency of the generation itself, ignoring latency of routing and any other pre-generation tasks. 
+                 This policy was put in place in order to more closely compare the models' speed of task-solving to that of the human subject. 
+                 It is worth noting that this "generation" <em>does</em> include reasoning inference. In the case of the Qwen 3.8 Max and Gemini 3.5 Flash Lite responses, 
+                 OpenRouter divided the total response into three sub-events. For each sub-event of each response, costs, latency measurements, and token counts were 
+                 added together for total measurements. Speed in tokens per second was calculated by averaging tokens per second across all sub-events.
+            </p>
+            <h2 class="heading2">
+                <strong>Findings</strong>
+            </h2>
+            <p class="body-style">
+                This section goes over some important observations dervied from the data, divided into subsections for each metric recorded.
+            </p>
+            <h3 class="heading3">
+                <strong>Correctness</strong>
+            </h3>
+            <p class="body-style">
+                In a result that was unexpected before performing the research, <strong>all of the subjects solved the puzzle correctly</strong>, giving an answer of 51. 
+            </p>
+            <p class="body-style">
+                The human subject solved the puzzle by doing a row-by-row scan of the image, arriving at row 6 (46-55) and finding the missing number there.
+                Most of the LLM subjects reasoned similarly, appearing to do row-by-row scans of the image before finding the row with a number gap. 
+                Reasoning history was made available in OpenRouter for every model except for GPT 5.6 Luna, GPT 5.6 Terra, GPT 5.6 Sol, Claude Sonnet 5, and Gemini 3.5 Flash Lite. 
+                In these histories, the models either displayed each row's content in printed text or indicated they were analyzing the grid of numbers. Deepseek, Kimi, GLM, and Qwen models 
+                did the most double-checking of their initial solutions, while other models' reasoning traces were more concise. Only two models used tools to reason about 
+                or display the solution: Qwen 3.8 Max and Gemini 3.5 Flash Lite. Gemini 3.5 Flash Lite's response was unique in another way, displaying something resembling the 
+                reasoning history in the final response itself and initially supposing that the gap in row 6 was two numbers long (51-52). Later in the response it 
+                corrected this assumption and gave the correct solution. Another blip was observed in Claude Sonnet 5's response. Though it correctly guessed the missing number, 
+                it did potentially get the row number wrong, saying the missing number appeared in row 5 rather than row 6. It's unclear whether or not Sonnet assumed a 0-based numbering system. 
+            </p>
+            <h3 class="heading3">
+                <strong>Time</strong>
+            </h3>
+            <p class="body-style">
+                Time-to-solution ranged from <strong>111.8 seconds at the high end</strong> to an impressive <strong>1.5 seconds at the low end</strong>. 
+                Moonshot AI <strong>Kimi K3</strong> on low reasoning was behind the <strong>longest</strong> response time, owing to an especially long 
+                reasoning trace. The <strong>fastest</strong> response came from OpenAI's <strong>GPT 5.6 Terra</strong>. GPT 5.6 models were behind the 
+                next two fastest responses as well. <strong>The human subject's time landed right in the median, at 12.7 seconds</strong>. 
+                However, this "median" positioning places the human's time much closer to the fastest response than the 
+                slowest.
+            </p>
+            <p class="body-style">
+                The plot below shows each subject's time-to-solution (click or tap image for interactive version, laptop or desktop recommended).
+            </p>
+            <div class="essay-visual">
+                <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQOUvHa5jeGMvLvHXj2_-tBCR1vbB1BBHUBg1ajhAawyZ9zUWLpSduGBW3-rDmVuihFOAhT4_Q5ZJO4/pubhtml?gid=2078446329&single=true" target="_blank">
+                <img src="/research/assets/ai-puzzle/tts.png" class="essay-image" alt="A scatterplot of multicolored points mapping AI models to solution latency (time to solution) measures"> 
+                </a>
+            </div>
+            <h3 class="heading3">
+                <strong>Token Count</strong>
+            </h3>
+            <p class="body-style">
+                An LLM output's total token count may be tied to the length of the final response and/or the length of its reasoning trace. 
+                Higher token counts aren't necessarily an indication of higher inefficiency, while lower token counts signify more concise 
+                responses/and or reasoning traces. With this said, an output's token count can be analyzed at the same time as the content
+                 of its reasoning trace and final response to determine how efficient the response was at communicating its intended level of conciseness. 
+            </p>
+            <p class="body-style">
+                The plot below shows the token count for each LLM subject's ouput (click or tap image for interactive version, laptop or desktop recommended). 
+            </p>
+            <div class="essay-visual">
+                <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQOUvHa5jeGMvLvHXj2_-tBCR1vbB1BBHUBg1ajhAawyZ9zUWLpSduGBW3-rDmVuihFOAhT4_Q5ZJO4/pubhtml?gid=424150583&single=true" target="_blank">
+                    <img src="/research/assets/ai-puzzle/tokens.png" class="essay-image" alt="A scatterplot of multicolored points mapping AI models to token count measures"> 
+                </a>
+            </div>
+            <p class="body-style">
+                Moonshot's <strong>Kimi K3</strong> on low reasoning once again landed on the <strong>high end</strong> of a measurement, generating the most tokens out of all LLM subjects at <strong>4,358</strong>. 
+                This correlates the long response time with a high token count rather than a "slow" model. Interestingly enough, this high token count was observed 
+                despite a concise final response. The vast majority of tokens were generated in the reasoning stage, which saw a lot of double-checking. 
+                The next-highest token count was seen in Qwen 3.8 Max's response, which again saw re-verification steps in the reasoning trace, which included 
+                running a shell script to display and read all numbers in the image. This trend of long reasoning traces is seen in the majority of the 11 most token-generating models,
+                 with notable exceptions in Grok 4.6 at medium and high reasoning. Despite the high token counts on paper, both the final response and reasoning traces for these two subjects were shorter
+                  than the counts would seem to indicate. Most of Grok's inference in these cases was "hidden". 
+            </p>
+            <p class="body-style">
+                On the low end, Anthropic and OpenAI models can be seen taking up the six lowest spots for total tokens generated, OpenAI's <strong>GPT 5.6 Terra</strong> landing at the <strong>lowest end with 73 tokens</strong>.
+                 This was correlated with very brief (or even non-existent) reasoning histories and short responses. 5.6 Terra's response was especially remarkable, 
+                 being a single sentence: "The missing number is 51."
+                Every other model showed a little more about the location of the missing number and/or how the prompter should find it. 
+            </p>
+            <h3 class="heading3">
+                <strong>Cost</strong>
+            </h3>
+            <p class="body-style">
+                For this particular task, every LLM response costed less than $0.10, and the majority costed less than $0.01. 
+                In a finding that lines up with previously stated observations, Moonshot AI's <strong>Kimi K3</strong> costed the <strong>highest</strong> to run at around <strong>$0.07</strong>. 
+            </p>
+            <p class="body-style">
+                A GPT 5.6 model (GPT 5.6 Luna in this case) almost once again landed on the low end, being the second cheapest 
+                at $0.0004, nearly free. (It is worth noting that GPT 5.6 was discounted 50% on OpenRouter at the time the research was performed. Correcting for this, 
+                we can find that GPT 5.6 Luna would instead land at the 7th cheapest spot.)  
+            </p>
+            <p class="body-style">
+                The <strong>cheapest</strong> spot was taken instead by <strong>GLM 5.3 Flash</strong> at high reasoning <strong>($0.00022)</strong>. GLM 5.3 Flash (at other reasoning efforts) took the number 3 and 4 
+                spots for cheapest to run as well. Interestingly enough, the responses from GLM 5.3 Flash weren't unusually token efficient, indicating the low response cost was connected with a low operation cost.
+                The costliest 11 models to run were almost exclusive to just three labs: Moonshot AI, Anthropic, and SpaceXAI. Alibaba (behind Qwen) and Google Deepmind (behind Gemini) were the only two exceptions. 
+                (Qwen 3.8 Max landed at the 3rd most expensive spot, while Gemini 3.1 Pro Preview landed at the 9th most expensive spot.) Anthropic's inclusion in this list was fairly surprising, given its models all
+                 appeared in the six lowest spots for token generation, indicating a high cost-per-token when this research was being performed.
+            </p>
+            <p class="body-style">
+                The plot below shows each LLM subject's response cost (click or tap image for interactive version, laptop or desktop recommended). 
+            </p>
+            <div class="essay-visual">
+                <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQOUvHa5jeGMvLvHXj2_-tBCR1vbB1BBHUBg1ajhAawyZ9zUWLpSduGBW3-rDmVuihFOAhT4_Q5ZJO4/pubhtml?gid=888355520&single=true" target="_blank">
+                    <img src="/research/assets/ai-puzzle/generation-cost.png" class="essay-image" alt="A scatterplot of multicolored points mapping AI models to response cost measures"> 
+                </a>
+            </div>
+            <h3 class="heading3">
+                <strong>Speed</strong>
+            </h3>
+             <p class="body-style">
+                Though so far it's been observed that time-to-solution has been most associated with token count, it is worth recording
+                 OpenRouter's measurements for model speed, giving an indication for how efficient a model may be on longer, 
+                 more token-intensive tasks.
+                 <br>
+                The plot below shows each LLM subject's speed in tokens per second (click or tap image for interactive version, laptop or desktop recommended).
+            </p>
+            <div class="essay-visual">
+                <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQOUvHa5jeGMvLvHXj2_-tBCR1vbB1BBHUBg1ajhAawyZ9zUWLpSduGBW3-rDmVuihFOAhT4_Q5ZJO4/pubhtml?gid=703451352&single=true" target="_blank">
+                    <img src="/research/assets/ai-puzzle/speed.png" class="essay-image" alt="A scatterplot of multicolored points mapping AI models to speed measures"> 
+                </a>
+            </div>
+            <p class="body-style">
+                One easily noticeable trend here is the speed of Deepseek and Gemini models, which occupy the six fastest spots. <strong>Gemini 3.5 Flash Lite</strong> was by far the <strong>fastest</strong>, at <strong>212.5 tokens per second</strong>. 
+                The slowest of the Deepseek models, V4 Flash Vision Exp at high reasoning, was still over 30 seconds faster than the next fastest LLM subject, Grok 4.6 at high reasoning. Gemini 3.5 Flash Lite was almost 200 tokens per second 
+                faster than the <strong>slowest</strong> of all LLM subjects, <strong>Qwen 3.5 Flash (26 tokens per second)</strong>. 
+            </p>
+            <p class="body-style">
+                Apart from this trend, there isn't a clear order to the placement of other LLM subjects on the plot, neither is there much of a perceptible connection between generation speed and 
+                time-to-solution. While Kimi K3 at low reasoning had its response take the longest to finish, K3 at low reasoning is outside the 5 slowest models. GPT 5.6 models appear at the 
+                middle end of the speed plot even though their response times were the three shortest. 
+            </p>
+            <h2 class="heading2">
+                <strong>Conclusions</strong>
+            </h3>
+            <p class="body-style">
+                The findings of this research both challenge and affirm some common conceptions about large language models and the products offered by high-profile labs. 
+                The fact that every AI model was able to solve the task, around half of them faster than the human subject, is a testament to the progress of AI development 
+                and goes far from painting modern AI models as inaccurate and hallucination-prone. Though this experiment is not emblematic of complex enterprise tasks, 
+                cost observations also proved positive. In terms of individual labs' offerings, we see further surprises in the placement of Kimi K3 in the high ends of 
+                cost and time-to-solution measurements, and affirmation in the placement of Deepseek and GLM models towards the low end of cost measurements. GPT 5.6 was a standout
+                 for U.S.-based labs, showing OpenAI's cemented place in the industry.
+            </p>
+            <p class="body-style">
+                Though specific labs' products were compared with each other in this research, not all of the findings should be used to consider the quality of one model over another. 
+                Though there are important considerations in speed, cost, and latency (especially in light of how difficult it is for a model to reason), things like token count have
+                 a pro and con nature to them. Low token count responses like those given by GPT and Claude models also gave sparse (or nonexistent) directions for how to solve the puzzle. 
+                 While excessive reasoning traces did serve to less constructively spend tokens, some responses did seem to display a sweet spot between reasoning length and token spend, 
+                 giving insight into the model's process without being inefficient. However, this "sweet spot" is only necessary if this insight is actually desired by the user.
+            </p>
+            <p class="body-style">
+                As mentioned above, this experiment does not seek to survey AI models' capabilities at work similar to what they would be used for in a business or research setting, 
+                but rather seeks to look at how they perform at real-world logic problems. It would be nice to see more experiments like this one from other researchers to 
+                gain further insight into what happens when you simply point AI to a random real-world puzzle or issue.
+            </p>
+            <p class="body-style">
+                If you read this entire essay (or at least half of it), chances are you've found the process and findings it contains interesting. I've set up a <a href="https://github.com/paulsterdev/AI-Number-Puzzle">GitHub repository</a> 
+                containing the puzzle image, the prompt used, each model's response and reasoning trace (if applicable), and the dataset of measurements. 
+            </p>
+            <p class="body-style">
+                Hand-typed on my HP laptop.
+            </p>        
+        </div>
+        <footer>
+            <div id="footer">
+            </div>
+        </footer>   
+    </body>
+</html>
